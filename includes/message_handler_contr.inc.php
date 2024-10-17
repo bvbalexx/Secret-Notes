@@ -29,3 +29,9 @@ else {
 
      }
 }
+
+function create_user(object $pdo, string $message) {
+
+  set_user($pdo, $message);
+
+}

@@ -6,6 +6,7 @@ require_once "includes/message_handler_view.inc.php";
 ?>
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

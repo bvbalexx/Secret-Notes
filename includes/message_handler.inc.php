@@ -27,7 +27,6 @@ if(is_input_length_valid($message) == false ) {
 
 }
 
-// TO DO : gestionare erori folosind sesiuni.
 
 require_once 'config_session.inc.php';
 
@@ -42,7 +41,19 @@ die();
 
 }
 
+$_SESSION["message"] = $message;
 
+create_user($pdo, $message);
+
+$_SESSION['link_generated'] = true;
+
+header("Location: generate_success.php");
+
+
+$pdo = null;
+$stmt = null;
+
+die();
 
 
 
